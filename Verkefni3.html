@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Kristófer Valgarð Guðrúnarson<br></a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Valmynd</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Heim</a></li>
+											<li><a href="Verkefni1.html">Verkefni 1: Vefsíða</a></li>
+											<li><a href="Verkefni2.html">Verkefni 2: Tölvustuddur skurður</a></li>
+											<li><a href="Verkefni3.html">Verkefni 3: 3D prentun og skönnun</a></li>
+											<li><a href="Verkefni1.html">Lokaverkefni</a></li>
+											<li><a href="Ferilskrá - Kristófer Valgarð Guðrúnarson.pdf" target="_blank">Ferilskrá</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Verkefni 3</h2>
+							<p>3D prentun og skönnun<br></p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Verkefnalýsing</h3>
+								<p>
+									Hanna á lítið módel fyrir 3D prentun sem ekki væri hægt að framkvæma með frádráttar framleiðslu (addative vs subtractive). Einnig á að hanna og framkvæma prófanir á 3D prentaranum til að ákvarða hönnunar reglur og skorður áður en módelið er á endanum prentað og síðan útskýra hvað maður lærði af ferlinu. Prentaðu hlutinn með því að nota í mesta lagi 100g af plasti skv slicer. Að lokum skal 3D skanna einhvern hlut.
+									Útskýrðu hvað þú lærðir af ferlinu.
+								
+								</p>
+							
+					
+								<hr>
+
+								
+								<h3>Hugmyndaleit</h3>
+								<p>
+								Í þessu verkefni hannaði ég og teiknaði lítinn blómavasa með rúnuðu mynstri. Sjá mynd hér að neðan
+								</p>
+									
+									
+								<div class="row aln-center">
+									<img src="images/V3/vasi111.jpeg" width="35%" alt="...">
+								</div>
+									
+									
+								<p>
+								Í fyrstu hafði ég í raun enga hugmynd hvað ég vildi þrívíddarprenta en síðan tók ég eftir blómavasa heima sem var með lárétt mynstur. Þá fór ég að velta því fyrir mér maður myndi hanna svipaðan vasa nema í minni stærð og prófa að hafa annað mynstur. Vasinn er holur að innan með ágætlega flókið mynstur utan á, fasta veggþykkt og breytilegt þvermál og því tel ég hann uppfylla kröfur verkefnisins.
+								
+								</p>
+								
+								<div class="row aln-center">
+									<img src="images/V3/blomavasi.jpeg" width="35%" alt="...">
+								</div>
+								
+								
+								
+								<hr>
+								
+								<h3>Hönnun</h3>
+								<p>
+								
+									
+									
+									
+								Ég byrjaði á hönnuninni í Fusion og teiknaði útlínu vasans frá hlið þar til hann leit út eins og ég vildi hafa hann. Ég miðaði nokkurn veginn við vasann heima en hann hefur einungis ein beygjuskil í hönnuninni. Ég teiknaði útlínuna í sketch og notaði spline til að teikna bogann. Ég prófaði að bæta við fleiri punktum á bogann gera formið ýktara en mér fannst það koma frekar illa út sérstaklega þar sem ég var að gera vasann í lítilli stærð. Því endaði hönnunin með einum punkti í spline-inu sem ég gat stillt lögunina með. Ég ákvað að nota parametra við teikningu til að gera breytingar á stærðum auðveldari síðar. Eftirfarandi parametrar voru notaðir í sketchinu:
+								</p>
+								
+								<div class="image-container" style="display: flex; gap: 20px; justify-content: center;">
+                                            <div class="image-wrapper" style="text-align: center;">
+                                                <img src="images/V3/sketch1.png" alt="Description of the second image" style="width: 80%;">
+                                                <p>Sketch fyrir vasa</p>
+                                            </div>
+                                            <div class="image-wrapper" style="text-align: center;">
+                                                <img src="images/V3/vasiparametrar.png" alt="Description of the first image" style="width: 100%;">
+                                                <p>Parametrar</p>
+                                            </div>
+                                        </div>
+									
+									
+								<p>
+								Ég ákvað að hafa botnradíusinn rbotn = 22 mm og hæðin var háð honum með sambandinu h = 2*r*1.8. Ég offsettaði upprunalega sketch-ið um fjarlægð sem nemur veggþykktina, t = 2 mm og revolve-aði þann prófíl til að fá grunnform vasans. Einnig teiknaði ég mynstrið í sketch-ið í fjarlægðinni t2 = 4 mm frá innra yfirborði vasans svo raunveruleg þykkt mynsturins er 2 mm.
+								</p>	
+									
+								<p>
+									Ég leitaði á netinu að aðferðum til að gera mynstur á vasa og rakst að lokum á eftirfarandi <a href="https://www.youtube.com/watch?v=v3K9DpV9qn4">myndband</a> sem sýndi skilmerkilega hvernig ætti að gera það. 
+								</p>
+									
+									
+									
+									
+									<p>
+									Ég endaði með þessa hönnun sem má sjá 3D módel af:
+									
+									
+								</p>
+								
+							
+<div class="row aln-center">
+    <iframe 
+        src="https://a360.co/4ri0cKB"
+        width="100%"
+        height="600"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+								
+								
+								<hr>
+								
+								<h3>Prófun</h3>
+								<p>
+								Áður en ég fór að prenta út hönnunina í fullri stærð þurfti ég að gera prófanir. Ég var ákveðinn í að hafa veggþykktina 2 mm þar sem ég vildi að glasið væri nógu sterkbyggt til að bogna ekki eða brotna undan álagi. Einnig fannst mér það koma betur út útlitslega þegar brúnin á toppnum var ekki of þunn miðað við rendurnar í mynstrinu. Því vildi ég aðallega prófa að sjá hvernig prentarinn réði við fillet-mynstrið. Ég gerði afrit af upprunalegu skránni og breytti hönnuninni örlítið með því að smækka hana þannig að botn radíusinn var 18 mm. Þetta gerði ég til að spara mér aðeins prentunartíma. Einnig gerði ég beygjuna aðeins krappari í byrjun til að sjá hvernig prentarinn réði við það. Ég notaði planesplit í Fusion til að skipta módelinu í tvennt þannig ég gæti valið að prenta aðeins neðsta hluta vasans. Ég komst að því seinna meir að ég hefði getað gert það með auðveldari hætti beint í Prusa-Slicer forritinu en ég tók ekki eftir því þar sem ég var með stillt á beginner mode.
+									
+								</p>
+								
+								<div class="image-container" style="display: flex; gap: 20px; justify-content: center;">
+                                            <div class="image-wrapper" style="text-align: center;">
+                                                <img src="images/V3/IMG_1778.jpeg" alt="Description of the second image" style="width: 80%;">
+                                                <p>Prentun prufu</p>
+                                            </div>
+                                            <div class="image-wrapper" style="text-align: center;">
+                                                <img src="images/V3/IMG_1780.jpeg" alt="Description of the first image" style="width: 80%;">
+                                                <p>Prufa</p>
+                                            </div>
+                                        </div>
+								
+								
+								
+								<p>
+								Það tók rúman klukkutíma og 14 mínútur að prenta prufuna og það gekk vel. Mynstrið á hliðunm kom betur út en ég átti von á. Því þurfti ég ekki að breyta upprunalegu hönnuninni eða nota support. 
+									
+								
+								</p>
+								
+								<p>
+									
+								
+								
+								</p>
+								
+								
+								
+								<hr>
+								
+								<h3>3D prentun</h3>
+								<p>
+								Ég exportaði módelinu úr Fusion sem 3mf skjali og opnaði það í Prusa Slicer forritinu. Þá gat ég séð módelið og stillt ýmislegt. Ég studdist við myndband frá Hafliða um <a href="https://www.youtube.com/watch?v=Noqzgru1wNY">hvernig á að nota Prusa Slicer</a>. Ég stillti á 0.20 mm SPEED eftir ábendingu frá leiðbeinanda til að minnka prentunartíma, setti infill á 15%	og ýtti síðan á "slice now". Þá fékk ég upplýsingar um prentunina og áætlað var að hún tæki um 4 tíma og 20 mínútur og notaði 45 g af plasti. Þá ýtti ég á "Export G-code" og setti skránna sem það gaf á SD-kort til að setja í Prusa Slicer 3D prentarann. Ég valdi að hafa vasann í svörtum lit.
+								</p>	
+								
+								<div class="row aln-center">
+									<img src="images/V3/prusasl2.png" width="70%" alt="...">
+								</div>
+								
+								
+								<p>
+								Vasinn kom mjög vel út og smáatriðin eru slétt og svarti liturinn er það djúpur að hann lítur yfirleitt ekki út fyrir að vera úr plasti.
+								</p>	
+									
+								
+								<div class="row aln-center">
+									<img src="images/V3/IMG_1794.jpeg" width="50%" alt="...">
+								</div>
+								
+								
+								
+								<p>	
+								Ég setti 3mf skrárnar fyrir bæði aðal- og prufuútgáfuna  hér inn á <a href="https://thangs.com/designer/kristofervg" target="_blank">Thangs</a>.
+									
+									
+							
+								</p>
+								<hr>
+								
+								
+								
+								<h3>3D skönnun</h3>
+								<p>
+								Ég hlóð niður appinu <a href="https://scaniverse.com/" rel="noopener noreferrer">Scaniverse</a> á símann minn til að geta 3D skannað einhvern hlut. Pennaveskið mitt varð fyrir valinu þar sem það er mislitt og hefur smáatriði eins og rennilás. Skönnunin gekk vel fyrir sig og tók ekki nema nokkrar mínútur. Upplausnin á pennaveskinu sjálfu er fín en borðið í kring kom skringilega óskýrt út. Ég reyndi að croppa það alveg út í appinu en það reyndist erfitt að ná því án þess að skera hluta af pennaveskinu. Því lét ég það vera og skannið má sjá hér:
+									
+								</p>
+								
+								<div class="row aln-center">
+                                                <iframe width="100%" height="100%" frameborder="0" allowfullscreen src="https://scaniverse.com/scan/cyvyt53r5xcyc7hv?embed=1"></iframe>
+
+                                            </div>
+								
+								
+
+								<hr>
+								<h3>Lærdómur dreginn af verkefninu</h3>
+								<p>
+								Gerð þessa verkefnis var afar lærdómsríkt og var frábrugðið þeim framleiðsluaðferðum sem ég hef kynnst hingað til. Það gaf mér betri skilning á hve mikið væri hægt að gera með 3D prentun en einnig takmarkanir við ferlið. Ég vissi frá byrjun að ég vildi hafa vasann frekar lítinn til að lækka prentunartímann en hann tók samt sem áður rúmar 4 klukkustundir. Einnig gerði ég mér grein fyrir takmörkunum varðandi overhang og mögulega þörf á stuðningi.
+								</p>
+								
+								
+								
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="mailto:kvg5@hi.is" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/kristofervg/TolvustuddFramleidsla" class="fab fa-github" style="border-bottom: none;"><span class="label"></span></a></li>
+							<li><a href="Ferilskrá - Kristófer Valgarð Guðrúnarson.pdf" target="_blank" class="icon solid fa-file-pdf"><span class="label"></span> </a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Kristófer Valgarð Guðrúnarson</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
